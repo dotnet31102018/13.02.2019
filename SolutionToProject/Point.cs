@@ -52,7 +52,7 @@ namespace CanvasProject
         /// <param name="x">the new x coordiante of the point (must be between 0-canvas max width)</param>
         internal void SetX(int x)
         {
-            if (x >= 0 && x < MyCanvas.MAX_WIDTH)
+            if (x >= 0 && x <= MyCanvas.MAX_WIDTH)
             {
                 _x = x;
             }
@@ -69,7 +69,7 @@ namespace CanvasProject
         /// <param name="y">the new y coordiante of the point (must be between 0-canvas max height)</param>
         internal void SetY(int y)
         {
-            if (y >= 0 && y < MyCanvas.MAX_HEIGHT)
+            if (y >= 0 && y <= MyCanvas.MAX_HEIGHT)
             {
                 _y = y;
             }
